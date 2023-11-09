@@ -1,0 +1,26 @@
+class Student:
+    def __init__(self, adi, sinif_seviyesi, cinsiyet, not_ortalamasi):
+        self.adi = adi
+        self.sinif_seviyesi = sinif_seviyesi
+        self.cinsiyet = cinsiyet
+        self.not_ortalamasi = not_ortalamasi
+
+    def show_info(self):
+        print(f"Ögrenci Adı: {self.adi}")
+        print(f"Sinif Seviyesi: {self.sinif_seviyesi}")
+        print(f"Cinsiyeti: {self.cinsiyet}")
+        print(f"Not ortalamasi:{self.not_ortalamasi}")
+
+#öğrenci nesnelerini oluştur
+ogrenci1 = Student("Adam", "high", "man", 85)
+ogrenci2 = Student("Ellen", "university", "woman", 90)
+ogrenci3 = Student("Tariq", "doctoral", "man", 95)
+ogrenci4 = Student("Simon", "secondary", "man", 75)
+ogrenci5 = Student("Monique", "primary", "woman", 70)
+
+#öğrencileri bir liste içinde tut
+ogrenciler = [ogrenci1, ogrenci2, ogrenci3, ogrenci4, ogrenci5]
+
+#tüm öğrecilerin bilgilerini ekrana bastır
+for ogrenci in ogrenciler:
+    ogrenci.show_info()
